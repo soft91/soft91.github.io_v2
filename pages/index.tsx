@@ -2,6 +2,7 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Model from "./../components/GlbModel/Model";
+import Model_Jumping from "./../components/GlbModel/Model_jumping";
 
 export default function Home() {
 	return (
@@ -16,7 +17,7 @@ export default function Home() {
 			<ambientLight intensity={1.25} />
 			<ambientLight intensity={0.1} />
 			<directionalLight intensity={0.4} />
-			<Model position={[0.025, -0.9, 0]} />
+			<Model_Jumping position={[0.025, -0.9, 0]} />
 			<OrbitControls />
 		</Canvas>
 	);
